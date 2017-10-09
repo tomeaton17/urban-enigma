@@ -2,18 +2,19 @@
 Module contains class and methods to interact with instagram's API
 Each of the classes has quick access attributes such as number of followers, user/media id
 '''
-import datetime
+import datetime, os
 from pprint import pprint as pp
-from datacollection.request_handler import request_handler
+from request_handler import request_handler
 import itertools
 from collections import Counter
 time_fmt = "%c"  # because time is very important define it here.
 
+access_token=os.environ['API_TOKEN'] 
 # create class User
 class User(object):
     """ base class to store urls, user_id, user_search_data etc """
+    access_token = access_token
 
-    
     def __init__(self, username=None, media_id=None):
         self.username = username
         self.media_id = media_id
@@ -115,6 +116,7 @@ class Media(User):
 
 
 if __name__ == "__main__":
-    bryoh = Profile('bryoh_15')
+    user_name = os.environ['USER_NAME']
+    bryoh = Profile(user_name)
     pp( bryoh.__dict__ )
 
