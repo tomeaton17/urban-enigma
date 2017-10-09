@@ -104,3 +104,6 @@ ENV/
 *~
 *.swp
 *.*.swp
+
+# api tokens
+apitokens
