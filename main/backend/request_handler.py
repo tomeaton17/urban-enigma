@@ -7,7 +7,8 @@ from response looksup lookup_str in json if it doesn't exist it returns the whol
 json object (lookup_str will mostlikey default to 'data' key)
 
 '''
-import requests
+import requests, os
+from pprint import pprint as pp
 def get_request(url, requests=requests):
     '''returns request.get object '''
     result = requests.get(url)
@@ -25,3 +26,6 @@ def request_handler(url, lookup_str=None):
     return look_up_key(request_result, lookup_str)
 
 
+if __name__ == '__main__':
+    pp(get_request('https://api.instagram.com/v1/users/self/?access_token=' + os.environ['API_TOKEN'], requests))
+    
