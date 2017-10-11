@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# vim
+*~
+*.swp
+*.*.swp
+
+# api tokens
+.apitokens
