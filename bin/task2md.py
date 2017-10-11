@@ -16,13 +16,22 @@ for line in lines:
 f.close()
 
 f = open("../README.md", "a")
-f.write("| ID | Description |\n")
-f.write("|----|-------------|\n")
+f.write("| ID | Description | Completed |\n")
+f.write("|----|-------------|-----------|\n")
+
+counter = 0
 
 for i in range(0, len(data)):
-    if(data[i]['id'] != 0):
-        if(data[i]['project'] == 'urban-enigma'):
-            f.write("|" + str(data[i]['id']) + "|" + str(data[i]['description']) +
-                    "|\n")
+    if(data[i].get('project') and data[i]['project'] == 'urban-enigma' and
+       data[i]['status'] != 'deleted'):
+        if(data[i]['id'] != 0):
+            counter += 1
+            f.write("|" + str(counter) + "|" + str(data[i]['description']) +
+                    "|" + "No" + "|\n")
+        else:
+            counter += 1
+            f.write("|" + str(counter) + "|" + str(data[i]['description']) + "|"
+                                                   + "Yes" + "|\n")
+
 
 

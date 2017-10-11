@@ -2,6 +2,8 @@
 {"id":1,"description":"Display pictures on index.html","entry":"20171009T230230Z","modified":"20171009T230230Z","project":"urban-enigma","status":"pending","uuid":"ab37b175-07bc-4761-8a33-f5e56b3a0251","urgency":1.00548},
 {"id":2,"description":"Get images hashtags and display on page","entry":"20171009T230307Z","modified":"20171009T230307Z","project":"urban-enigma","status":"pending","uuid":"e4aa8d6f-933c-4bf2-b10b-83851f2be159","urgency":1.00548},
 {"id":3,"description":"Make main page responsive","entry":"20171009T230318Z","modified":"20171009T230318Z","project":"urban-enigma","status":"pending","uuid":"d68a505a-07b2-4d45-a80c-92c4fbd32f87","urgency":1.00548},
+{"id":0,"description":"test task","end":"20171011T182138Z","entry":"20171011T182133Z","modified":"20171011T182140Z","status":"deleted","uuid":"afc4c323-91d2-4365-bfc9-638fd8f47dd5","urgency":0},
+{"id":0,"description":"this is a test task","end":"20171011T180909Z","entry":"20171011T180902Z","modified":"20171011T180909Z","status":"completed","uuid":"80539c42-59be-47c5-9e6b-920d9932256a","urgency":0},
 {"id":0,"description":"Make script to convert taskwarrior output to markdown","end":"20171011T134057Z","entry":"20171010T113328Z","modified":"20171011T134057Z","project":"urban-enigma","status":"completed","uuid":"46e4ecc0-b62a-4471-a7a2-2ebd0d8a7b21","urgency":1.00548},
 {"id":0,"description":"test task","end":"20171011T133826Z","entry":"20171011T133713Z","modified":"20171011T133827Z","project":"urban-enigma","status":"deleted","uuid":"6032259d-a869-438d-a497-4fd2f6849678","urgency":1}
 ]
