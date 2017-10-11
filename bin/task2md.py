@@ -1,13 +1,9 @@
-import json
-import fileinput
-import os
-from pprint import pprint
+import json, os
 
 os.system("task export > task.json")
 
 with open('task.json') as data_file:
     data = json.load(data_file)
-
 
 f = open("../README.md", "r")
 lines = f.readlines()
