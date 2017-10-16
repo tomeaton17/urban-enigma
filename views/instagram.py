@@ -4,7 +4,7 @@ Each of the classes has quick access attributes such as number of followers, use
 '''
 import datetime, os
 from pprint import pprint as pp
-from request_handler import request_handler
+from views.request_handler import request_handler
 import itertools
 from collections import Counter
 time_fmt = "%c"  # because time is very important define it here.
