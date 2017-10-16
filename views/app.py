@@ -10,7 +10,7 @@ def index():
     bryoh = my_g.Profile(user_name)
 
     return render_template('index.html',
-                          div=bryoh)
+                          user=bryoh)
 
 
 if(__name__ == '__main__'):
