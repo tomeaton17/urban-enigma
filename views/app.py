@@ -8,9 +8,9 @@ app = Flask(__name__, template_folder='../templates')
 def index():
     user_name = os.environ['USER_NAME']
     bryoh = my_g.Profile(user_name)
-
     return render_template('index.html',
-                          user=bryoh)
+                          user=bryoh.username, followers=bryoh.followers,
+                           following=bryoh.follows, pp=bryoh.profile_picture_link)
 
 
 if(__name__ == '__main__'):

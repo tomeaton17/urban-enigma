@@ -7,6 +7,11 @@
 
    </head>
     <body>
-      <div>{{ user|safe }}</div>
+	    <div>
+		    <h1>{{ user|safe }}</h1><br>
+		    <p>Followers: {{ followers|safe }}</p><br>
+		    <p>Following: {{ following|safe }}</p><br> 
+		    <img src="{{ pp }}">
+	    </div>
     </body>
 </html>
