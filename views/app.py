@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import instagram as my_g
+import views.instagram as my_g
 import os
 app = Flask(__name__, template_folder='../templates')
 
