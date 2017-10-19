@@ -7,4 +7,5 @@ Watch this space :zap:
 |1|Display pictures on index.html|No|
 |2|Get images hashtags and display on page|No|
 |3|Make main page responsive|No|
-|4|Make script to convert taskwarrior output to markdown|Yes|
+|4|Sort out imports|No|
+|5|Make script to convert taskwarrior output to markdown|Yes|

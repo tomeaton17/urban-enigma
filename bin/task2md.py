@@ -5,6 +5,8 @@ os.system("task export > task.json")
 with open('task.json') as data_file:
     data = json.load(data_file)
 
+os.system("rm task.json")
+
 f = open("../README.md", "r")
 lines = f.readlines()
 f.close()
