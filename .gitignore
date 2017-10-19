@@ -107,3 +107,5 @@ ENV/
 
 # api tokens
 .apitokens
+
+.setenv.sh
