@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, render_template
 import views.instagram as my_g
 import os
 app = Flask(__name__)
+
 
 
 @app.route('/')
