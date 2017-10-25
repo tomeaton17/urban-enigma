@@ -107,6 +107,6 @@ ENV/
 
 # api tokens
 .apitokens
-.setenv.sh
 
-.setenv.sh
+# env hook
+.envrc
