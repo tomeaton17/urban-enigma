@@ -19,8 +19,6 @@ from app import app
 app = app
 
 if __name__ == '__main__':
-    pprint(dir(InstaBot))
-
     app.run(debug=True)
     
 

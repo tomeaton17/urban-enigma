@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 {% block title %}index{% endblock %}
 {% block content %}
-	<h1>{{ user|safe }}</h1><br>
-	<p>Followers: {{ followers|safe }}</p><br>
-	<p>Following: {{ following|safe }}</p><br> 
-	<p>Bio: {{ bio }}</p>
-	<img src="{{ pp }}"></img>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+                <img src="{{ pp }}"><p>{{ user|safe }}</p></img>
+        </div>
+
+        <!-- Main page Content -->>
+        <div id="page-content-wrapper">
+          <button id='menu-toggle' type="button" class="btn btn-primary">Click Me Please</button>
+            <div class="container-fluid">
+               	<p>Bio: {{ bio }}</p>
+                <h1>{{ user|safe }}</h1>
+               	<p>Followers: {{ followers|safe }}</p><br>
+               	<p>Following: {{ following|safe }}</p><br> 
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
 {% endblock %}
