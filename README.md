@@ -12,3 +12,6 @@ Watch this space :zap:
 |6|get images hashtags and display on page|No|
 |7|Make main page responsive|No|
 |8|Make script to convert task output to markdown|No|
+|9|Frontend Header: Complete header tag to include Doctype, Charset, Viewport, Title and desciption |No|
+|10|Frontend Header: Add tags for icons and fonts |No|
+
