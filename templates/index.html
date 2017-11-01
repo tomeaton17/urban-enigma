@@ -1,23 +1,25 @@
-<<<<<<< Updated upstream
-<!doctype html>
-<html>
-	<head>
-		<title>Urban Enigma</title>
-	</head>
+{% extends "base.html" %}
+{% block title %}index{% endblock %}
+{% block content %}
 
-	<body>
-		<h1>Hello, World!</h1>
-	</body>
-=======
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-    <head>
-   </head>
-    <body>
-      <div>{{ div|safe }}</div>
-        {{ script|safe }}
-    {{ footer_html() }}
-       {{ dom|safe }}
-    </body>
->>>>>>> Stashed changes
-</html>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+                <img src="{{ pp }}"><p>{{ user|safe }}</p></img>
+        </div>
+
+        <!-- Main page Content -->>
+        <div id="page-content-wrapper">
+          <button id='menu-toggle' type="button" class="btn btn-primary">Click Me Please</button>
+            <div class="container-fluid">
+               	<p>Bio: {{ bio }}</p>
+                <h1>{{ user|safe }}</h1>
+               	<p>Followers: {{ followers|safe }}</p><br>
+               	<p>Following: {{ following|safe }}</p><br> 
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+{% endblock %}
